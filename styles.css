@@ -1,0 +1,30 @@
+.jr-text-hero {
+    font-size: 4.5rem;
+    line-height: 1;
+    color: var(--jr-primary-color) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .jr-text-hero {
+        font-size: 4rem;
+    }     
+}
+
+.jr-text-align {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .jr-text-align {
+        text-align: center;
+    }   
+}
+
+@media (max-width: 768px) {
+    .jr-flex-wrap {
+        flex-wrap: wrap;
+    }
+    .jr-flex-2 > div {
+        width: calc(100% - 0.5rem);
+    }
+}

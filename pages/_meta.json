@@ -1,0 +1,24 @@
+{
+	"index": {
+		"title": "Úvod",
+		"type": "page",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"photos": {
+		"title": "Portfolio",
+		"type": "page",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"services": {
+		"title": "Služby",
+		"type": "page"
+	},
+	"contacts": {
+		"title": "Kontakty",
+		"type": "page"
+	}
+}

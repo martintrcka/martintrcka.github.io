@@ -1,0 +1,30 @@
+import Image from 'next/image';
+
+# Portfolio
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis felis id arcu auctor eleifend in a neque.
+
+{(() => {
+  const galleryImages = Array.from({ length: 24 }, (_, index) => ({
+    src: `/photos/${index + 1}.webp`,
+    alt: `Lightweight Icon ${index + 1}`,
+  }));
+
+  return (
+    <div className="nx-flex nx-flex-row nx-gap-4 jr-flex-2 jr-flex-wrap nx-container nx-mx-auto nx-mt-16">
+      {galleryImages.map((image, index) => (
+        <div key={index} className="nx-mt-4">
+          <div>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              layout="intrinsic"
+                          width={500} // nastavte podle skutečné šířky obrázku
+              height={300} // nastavte podle skutečné výšky obrázku
+              className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+})()}
