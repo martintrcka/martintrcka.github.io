@@ -1,30 +1,64 @@
 import Image from 'next/image';
+import GalleryImage from '../public/photos/1.jpg';
+import GalleryImage2 from '../public/photos/2.jpg';
+import GalleryImage4 from '../public/photos/4.jpg';
+import GalleryImage3 from '../public/photos/3.jpg';
+import GalleryImage5 from '../public/photos/5.jpg';
+import GalleryImage6 from '../public/photos/6.jpg';
+import GalleryImage7 from '../public/photos/7.jpg';
+import GalleryImage8 from '../public/photos/8.jpg';
+import GalleryImage9 from '../public/photos/9.jpg';
+import GalleryImage10 from '../public/photos/10.jpg';
+import GalleryImage11 from '../public/photos/11.jpg';
+import GalleryImage12 from '../public/photos/12.jpg';
 
 # Portfolio
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis felis id arcu auctor eleifend in a neque.
 
-{(() => {
-  const galleryImages = Array.from({ length: 24 }, (_, index) => ({
-    src: `/photos/${index + 1}.webp`,
-    alt: `Lightweight Icon ${index + 1}`,
-  }));
+<div className="grid-container">
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage2} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage3} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
 
-  return (
-    <div className="nx-flex nx-flex-row nx-gap-4 jr-flex-2 jr-flex-wrap nx-container nx-mx-auto nx-mt-16">
-      {galleryImages.map((image, index) => (
-        <div key={index} className="nx-mt-4">
-          <div>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              layout="intrinsic"
-                          width={500} // nastavte podle skutečné šířky obrázku
-              height={300} // nastavte podle skutečné výšky obrázku
-              className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10"
-            />
-          </div>
         </div>
-      ))}
-    </div>
-  );
-})()}
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage4} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage5} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage6} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+        </div>
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage7} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage8} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage9} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+        </div>
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage10} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage11} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage12} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+        </div>
+</div>

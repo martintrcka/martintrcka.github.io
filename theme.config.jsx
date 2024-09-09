@@ -9,7 +9,7 @@ const CLIENT_NAME = 'Jindřich Ručil • Developer - The creator of Bootstrap T
 const CLIENT_URL = 'https://martintrcka.github.io';
 
 export default {
-	darkMode: false,
+	darkMode: true,
 	primaryHue: 212,
 	primarySaturation: 100,
 	logo,

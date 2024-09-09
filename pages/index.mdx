@@ -1,74 +1,143 @@
 import Image from 'next/image';
-import GalleryImage from '../public/photos/1.webp';
-import GalleryImage2 from '../public/photos/2.webp';
-import GalleryImage3 from '../public/photos/3.webp';
-import GalleryImage4 from '../public/photos/4.webp';
-import GalleryImage5 from '../public/photos/5.webp';
-import GalleryImage6 from '../public/photos/6.webp';
-import GalleryImage7 from '../public/photos/7.webp';
-import GalleryImage8 from '../public/photos/8.webp';
+import Cover from '../public/photos/cover.jpg';
+import Person from '../public/photos/person.avif';
+import Person2 from '../public/photos/person2.avif';
+import GalleryImage from '../public/photos/1.jpg';
+import GalleryImage2 from '../public/photos/2.jpg';
+import GalleryImage4 from '../public/photos/4.jpg';
+import GalleryImage3 from '../public/photos/3.jpg';
+import GalleryImage5 from '../public/photos/5.jpg';
+import GalleryImage6 from '../public/photos/6.jpg';
+import GalleryImage7 from '../public/photos/7.jpg';
+import GalleryImage8 from '../public/photos/8.jpg';
+import GalleryImage9 from '../public/photos/9.jpg';
+import GalleryImage10 from '../public/photos/10.jpg';
+import GalleryImage11 from '../public/photos/11.jpg';
+import GalleryImage12 from '../public/photos/12.jpg';
 
-![Bootstrap Theme Toggler Coer](../public/photos/cover.jpg)
+<div>
+    <Image src={Cover} alt="Lightweight Icon" layout="intrinsic" />
+</div>
 
-# Celodenní svatba
-- předsvatební schůzka s možným předsvatebním focením 
-- dva fotografové 
-- 10-12 hodin focení 
-- 400+ upravených fotografií v digitální podobě do 6 týdnů
-(počet fotografií se může lišit průběhem svatebního dne)
-- online galerie
-- upravené fotografie na USB 
-- doprava do 20km v ceně
-- záloha 2000 Kč
-
----
-
-# Půldenní svatba
-- předsvatební schůzka 
-- jeden fotograf
-- 5-8 hodin focení 
-- 200 upravených fotografií v digitální podobě do 4-6 týdnů.
-- online galerie
-- doprava do 20km v ceně
-- záloha 2000 Kč
-
-# Kontakty
-#### Veronika Folvarčná
-+420 777 000 042 — veronikafolvarcna@email.cz 
-
-#### Martin Trčka
-+420 721 212 891 — martin.trcka@email.cz
+<div className="nx-mt-16 nx-mb-8 nx-text-center">
+    <h1 className="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mb-8 jr-text-hero">Ceník</h1>
+    <h2 className="nx-font nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-text-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum.</h2>
+</div>
 
 <div className="nx-container nx-mx-auto nx-mt-16">
     <div className="nx-flex nx-flex-row nx-gap-4 jr-flex-2 jr-flex-wrap">
-        <div>
-            <Image src={GalleryImage} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+        <div className="nx-bg-gray-200 dark:nx-bg-neutral-900 nx-py-4 nx-px-6 nx-rounded-xl">
+            <strong className="nx-block">Celodenní svatba</strong>
+            <ul>
+                <li>Předsvatební schůzka s možným předsvatebním focením</li>
+                <li>Dva fotografové</li>
+                <li>10-12 hodin focení</li>
+                <li>400+ upravených fotografií v digitální podobě do 6 týdnů (počet fotografií se může lišit průběhem svatebního dne)</li>
+                <li>Online galerie</li>
+                <li>Upravené fotografie na USB</li>
+                <li>Doprava do 20 km v ceně</li>
+                <li>Záloha 2000 Kč</li>
+            </ul>
         </div>
-        <div>
-            <Image src={GalleryImage2} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
-        </div>
-        <div>
-            <Image src={GalleryImage3} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
-        </div>
-        <div>
-            <Image src={GalleryImage4} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+        <div className="nx-bg-gray-200 dark:nx-bg-neutral-900 nx-p-4 nx-rounded-xl">
+            <strong className="nx-block">Půldenní svatba</strong>
+            <ul>
+                <li>Předsvatební schůzka</li>
+                <li>Jeden fotograf</li>
+                <li>5-8 hodin focení</li>
+                <li>200 upravených fotografií v digitální podobě do 4-6 týdnů</li>
+                <li>Online galerie</li>
+                <li>Doprava do 20 km v ceně</li>
+                <li>Záloha 2000 Kč</li>
+            </ul>
         </div>
     </div>
 </div>
 
-<div className="nx-container nx-mx-auto nx-mt-4">
-    <div className="nx-flex nx-flex-row nx-gap-4 jr-flex-2 jr-flex-wrap">
-        <div>
-            <Image src={GalleryImage5} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+<div className="nx-mt-16 nx-mb-8 nx-text-center">
+    <h1 className="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mb-8 jr-text-hero">Ukázka</h1>
+    <h2 className="nx-font nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-text-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum.</h2>
+</div>
+
+<div className="grid-container">
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage2} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage3} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+
         </div>
-        <div>
-            <Image src={GalleryImage6} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage4} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage5} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage6} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
         </div>
-        <div>
-            <Image src={GalleryImage7} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage7} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage8} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage9} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
         </div>
-        <div>
-            <Image src={GalleryImage8} alt="Lightweight Icon" layout="intrinsic" className="nx-rounded-xl nx-border-b nx-border-neutral-200/70 nx-border-primary-100/10" />
+        <div className="grid-item">
+            <div>
+                <Image src={GalleryImage10} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage11} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+            <div>
+                <Image src={GalleryImage12} alt="Lightweight Icon" layout="intrinsic" />
+            </div>
+        </div>
+</div>
+
+<div className="nx-mt-16 nx-mb-8 nx-text-center">
+    <h1 className="nx-font-semibold nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-mb-8 jr-text-hero">Kontakty</h1>
+    <h2 className="nx-font nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100 nx-text-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum.</h2>
+</div>
+
+<div className="nx-container nx-mx-auto nx-mt-16">
+    <div className="nx-flex nx-flex-row nx-items-center nx-justify-center jr-flex-2 jr-flex-wrap">
+        <div className="nx-bg-gray-200 dark:nx-bg-neutral-900 nx-py-4 nx-px-6 nx-rounded-xl nx-flex nx-items-center">
+            <div>
+                <Image src={Person} alt="Veronika Folvarčná - Profile photo" layout="intrinsic" className="avatar" />
+            </div>
+            <div>
+                <strong className="nx-block">Veronika Folvarčná</strong>
+                <ul>
+                    <li><a href="tel:+420 777 000 042">+420 777 000 042</a></li>
+                    <li>veronikafolvarcna@email.cz</li>
+                </ul>
+            </div>
+        </div>
+        <div className="separator"></div>
+        <div className="nx-bg-gray-200 dark:nx-bg-neutral-900 nx-p-4 nx-rounded-xl nx-flex nx-items-center">
+            <div>
+                <Image src={Person2} alt="Martin Trčka - Profile photo" layout="intrinsic" className="avatar" />
+            </div>
+            <div>
+            <strong className="nx-block">Martin Trčka</strong>
+                <ul>
+                    <li>+420 721 212 891</li>
+                    <li>martin.trcka@email.cz</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
